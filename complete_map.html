@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Map with Filters</title>
+</head>
+<body>
+    <h1>Map with Filters</h1>
+    <div>
+        <label for="des_dis_dropdown">Destination (District):</label>
+        <select id="des_dis_dropdown">
+            <option value="All">All</option><option value="Waajid">Waajid</option><option value="Xudur">Xudur</option><option value="Daynile">Daynile</option><option value="Hodan">Hodan</option><option value="Kahda">Kahda</option><option value="Baydhaba">Baydhaba</option><option value="Cabudwaaq">Cabudwaaq</option><option value="Dhuusamarreeb">Dhuusamarreeb</option><option value="Baardheere">Baardheere</option><option value="Belet Xaawo">Belet Xaawo</option><option value="Doolow">Doolow</option><option value="Luuq">Luuq</option><option value="Belet Weyne">Belet Weyne</option><option value="Afmadow">Afmadow</option><option value="Jamaame">Jamaame</option><option value="Kismaayo">Kismaayo</option><option value="Afgooye">Afgooye</option><option value="Balcad">Balcad</option><option value="Jowhar">Jowhar</option><option value="Gaalkacyo">Gaalkacyo</option><option value="Hobyo">Hobyo</option><option value="Garoowe">Garoowe</option>
+        </select>
+        <button onclick="resetFilter()">Reset</button>
+    </div>
+    <iframe src="map.html" width="100%" height="600px"></iframe>
+    <script>
+        function resetFilter() {
+            document.getElementById('des_dis_dropdown').value = 'All';
+            // Add any additional JavaScript needed to update the map
+        }
+    </script>
+</body>
+</html>
